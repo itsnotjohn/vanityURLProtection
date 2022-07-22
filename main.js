@@ -1,8 +1,8 @@
 const { Client } = require('discord.js');
-const client = new Client({ intents: 32767 });a
+const client = new Client({ intents: 32767 });
 
 client.on('ready', async () => {
-    console.log(`Estou online! ${client.user.username}`);
+    console.log(`Online! ${client.user.username}`);
 });
 
 client.on('guildUpdate', async (oldGuild, newGuild) => {

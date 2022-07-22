@@ -22,7 +22,7 @@ client.on('guildUpdate', async (oldGuild, newGuild) => {
         const vanityURL = 'url';
 
         if (data.key === 'vanity_url_code' && data?.new !== vanityURL) {
-            setVanityURL(vanityURL);
+            setVanityURL(vanityURL).catch(() => { });
 
             const member = oldGuild.members.cache.get(entrie.executor.id);
             if (!member) return;

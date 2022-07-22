@@ -1,2 +1,2 @@
 # vanityURLProtection
-> this is a simple protectionVanityURL.
+> this is a simple Protection VanityURL.

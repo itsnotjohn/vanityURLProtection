@@ -19,7 +19,7 @@ client.on('guildUpdate', async (oldGuild, newGuild) => {
     }
 
     entrie.changes.map(data => {
-        const vanityURL = 'url';
+        const vanityURL = 'server url here';
 
         if (data.key === 'vanity_url_code' && data?.new !== vanityURL) {
             setVanityURL(vanityURL).catch(() => { });
